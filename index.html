@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="./stlye.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+     <!-- nav-bar start -->
+     <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="./logo.jpg" alt="gfg_logo">
+                </a>
+            </div>
+            <div class="nav-menu hide">
+                <a href="#">Home</a>
+                <a href="#">Car Rental</a>
+                <a href="#">Car Subscription</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- nav-bar end -->
+    <!-- carousels start -->
+    <div class="contaner-fluid">
+            <form action="#">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="mail">E-mail</label><br>
+                <input type="text" name="name" id="mail"><br>
+                <label for="location">Location</label><br>
+                <input type="text" name="name" id="location" list="locations"><br>
+                <datalist id="locations">
+                    <option value="Hyderbad"></option>
+                    <option value="Bangalore"></option>
+                    <option value="Mumbai"></option>
+                    <option value="Pune"></option>
+                </datalist>
+                <a href="./index1.html" class="button">Submit</a>
+            </form>
+        
+    </div>
+    <!-- carousels end -->
+
+  <!-- Bootstrap Carousel -->
+  <div class="carousel-container">
+    <div class="carousel">
+        <!-- First Slide -->
+        <div class="carousel-item">
+            <h3>Slide 1</h3>
+            <p>This is the first container.</p>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <h3>Slide 2</h3>
+            <p>This is the second container.</p>
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+            <h3>Slide 3</h3>
+            <p>This is the third container.</p>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-button carousel-button-left" onclick="prevSlide()">❮</button>
+    <button class="carousel-button carousel-button-right" onclick="nextSlide()">❯</button>
+</div>
+
+ <!-- feedback section -->
+ <div class="feedback">
+    <div class="back">
+    <span><i class="bi bi-emoji-smile-fill"></i></span>
+    <h2><b>1 Mn +</b></h2>
+    <p>Happy Coustmers</p>
+    </div>
+    
+    <div class="back">
+    <span><i class="bi bi-geo-alt-fill"></i></span>
+    <h2><b>22+ Cities</b></h2>
+    <p>Across India</p>
+    </div>
+
+    <div class="back">
+    <span><i class="bi bi-car-front-fill"></i></span>
+    <h2><b>50 Mn+</b></h2>
+    <p>Kms Travelled</p>
+    </div>
+
+    <div class="back">
+      <span><i class="bi bi-star-fill"></i></span>
+      <h2><b>4.8/5</b></h2>
+      <p>20K+ Reviewers</p>
+    </div>
+    </div>
+     </div>
+
+     <!-- information -->
+     <div class="matter">
+      <h2>Popular car types in Coimbatore</h2>
+      <div class="one">
+     <div>
+      <h3>By seating type</h3>
+      <ul>
+          <li>5 seater self drive car rental in Coimbatore</li>
+          <li>7 seater self drive car rental in Coimbatore</li>
+      </ul>
+  </div>
+  <div>
+      <h3>By body type</h3>
+      <ul>
+          <li>Hatchback self drive car rental in Coimbatore</li>
+          <li>SUV self drive car rental in Coimbatore</li>
+          <li>Sedan self drive car rental in Coimbatore</li>
+      </ul>
+  </div>
+  <div>
+      <h3>By make</h3>
+      <ul>
+          <li>Maruti cars for self drive rental in Coimbatore</li>
+          <li>Hyundai cars for self drive rental in Coimbatore</li>
+          <li>Mahindra cars for self drive rental in Coimbatore</li>
+      </ul>
+  </div>
+</div>
+</div>
+
+
+     <!-- footer section -->
+    <footer>
+
+        <div class="footerSection">
+    
+          <div class="footerLeft">
+    
+            <div class="footerInfo">
+              <p class="footerInfoHeading">ABOUT</p>
+              <div class="footerContent">
+                <p>Contact Us</p>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Flipkart Stories</p>
+                <p>Press</p>
+                <p>Flipkart Wholesale</p>
+                <p>Corporate Information</p>
+              </div>
+            </div>
+            <div class="footerInfo">
+              <p class="footerInfoHeading">HELP</p>
+              <div class="footerContent">
+                <p>Payments</p>
+                <p>Shipping</p>
+                <p>Cancellation & Returns</p>
+                <p>FAQ</p>
+                <p>Report Infringement</p>
+              </div>
+            </div>
+    
+            <div class="footerInfo">
+              <p class="footerInfoHeading">CONSUMER POLICY</p>
+              <div class="footerContent">
+                <p>Cancellation & Returns</p>
+                <p>Terms Of Use</p>
+                <p>Security</p>
+                <p>Privacy</p>
+                <p>Sitemap</p>
+                <p>Grievance Redressal</p>
+                <p>EPR Compliance</p>
+              </div>
+            </div>
+    
+    
+            <div class="footerInfo">
+              <p class="footerInfoHeading">SOCIAL</p>
+              <div class="footerContent">
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>YouTube</p>
+              </div>
+            </div>
+    
+          </div>
+    
+    
+          <div class="footerRight">
+    
+            <div class="footerInfo">
+    
+              <p class="footerInfoHeading">Mail Us:</p>
+              <div class="footerContent">
+                <p>Flipkart Internet Private Limited,</p>
+                <p>Buildings Alyssa, Begonia &</p>
+                <p>Clove Embassy Tech Village,</p>
+                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                <p>Bengaluru, 560103,</p>
+                <p>Karnataka, India</p>
+              </div>
+            </div>
+    
+            <div class="footerInfo">
+              <p class="footerInfoHeading">Registered Office Address:</p>
+              <div class="footerContent">
+                <p>Flipkart Internet Private Limited,</p>
+                <p>Buildings Alyssa, Begonia &</p>
+                <p>Clove Embassy Tech Village,</p>
+                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                <p>Bengaluru, 560103,</p>
+                <p>Karnataka, India</p>
+                <p>CIN : U51109KA2012PTC066107</p>
+                <p>Telephone: 044-45614700</p>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+    
+        <div class="footerExtras">
+          <span> <i class="fa-solid fa-suitcase"></i> Become a Seller</span>
+          <span> <i class="fa-solid fa-star"></i> Advertise</span>
+          <span> <i class="fa-solid fa-gift"></i> Gift Cards</span>
+          <span> <i class="fa-solid fa-circle-question"></i> Help Center</span>
+          <span>© 2007-2023 Flipkart.com</span>
+          <span><img src="./payment-method.svg" alt="payment-method"></span>
+    
+        </div>
+    
+      </footer>
+    <script src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
