@@ -1,0 +1,306 @@
+/* nav-bar start */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+body{
+    font-family: sans-serif;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* navbar styling */
+.navbar{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(223, 251, 219);
+}
+
+/* logo style  */
+.logo img{
+    height: 8rem;
+    border-radius: 100%;
+}
+
+.hamburger-menu{
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .line{
+   display: block;
+   width:2.5rem;
+   height: 2px;
+   margin-bottom: 10px;
+   background-color: black;
+   cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color: #eee;
+    font-weight: 600;
+
+}
+.nav-menu a{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+.nav-menu a:hover{
+    background-color: #ccc;
+}
+
+.hide{
+    display: none;
+}
+
+/* for Desktop view  */
+@media screen and (min-width:600px){
+    .navbar{
+        justify-content: space-around;
+    }
+    .nav-menu{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right:20px;
+        background: none;
+    }
+    .nav-menu a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .nav-menu a:hover{
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+}
+/* nav-bar end */
+
+/* carousels start */
+.contaner-fluid{
+            margin: 0;
+            width: 95%;
+            height: 50%;
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-image: url('road trip.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            overflow: hidden;
+            padding: 5rem;
+}
+form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(17, 16, 17, 0.5); 
+    color: white; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    width: 300px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.button{
+    background-color: rgba(17, 16, 17, 0.5);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* carousels end */
+/* cars-data */
+.cars-data{
+    grid-template-columns:repeat(1fr,1fr,1fr);
+}
+
+/*footer section*/
+.footerSection {
+    max-width: 1719px;
+    /* height: 346px; */
+    height: 300px;
+    background-color: #172337;
+    display: flex;
+
+}
+
+.footerLeft {
+    display: flex;
+    width: 50%;
+    margin-left: 65px;
+    justify-content: space-evenly;
+}
+
+.footerInfo {
+    width: 252px;
+    height: 194px;
+    padding-top: 40px;
+}
+
+.footerInfoHeading {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.footerContent {
+    color: #ffffff;
+    font-size: 12px;
+
+    line-height: 2;
+}
+
+.footerRight {
+    display: flex;
+    width: 50%;
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
+
+.footerExtras {
+    margin-top: 0.35px;
+    background-color: #172337;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1719px;
+    height: 70px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 2;
+    padding-left: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.fa-solid{
+    color:yellow
+}
+/*feedback*/
+.feedback{
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    background-color: beige;
+    box-shadow: 2px 2px 2px #ccc;
+}
+.back{
+    text-align: center;
+}
+.bi{
+    font-size: 2rem; /* Adjust the size as needed */
+}
+/*information*/
+.matter{
+    background-color: #1a1a1a;
+    padding: 20px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.matter h2 {
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.9;
+    
+}
+ .one div {
+    width: 30%;
+} 
+.one h3 {
+    font-size: 1.1em;
+    border-bottom: 1px solid #333;
+     margin-bottom: 10px; 
+    color: white;
+}
+.one li {
+  color: #878787;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}  
+.one li:hover{
+    color:white
+}
+/* curosels */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+
+/* Style for the carousel items */
+.carousel-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    font-size: 16px;
+}
